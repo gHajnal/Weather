@@ -22,7 +22,7 @@ Further expansions and developments are expected in the future, as efforts conti
 
 In order to run the app locally, you are expected to generate your own API key.
 
-Register at https://openweathermap.org/ for free, and genereate your key. 
+Register at https://openweathermap.org/ for free, and generate your key. 
 
 API key must be placed in /.env file, under the key name of REACT_APP_API_KEY.
 
@@ -58,7 +58,7 @@ Capitals list is provided from inside the application from a fixed data set.
 
 Requests are made using capital's name.
 
-API accepts these names, but is some specific cases, the response provided contains a different version for the given capital. 
+API accepts these names, but in some specific cases the provided response contains a different version for the given capital. 
 
 >Examples: 
 >* Bandar Seri Begawan returns _Brunei Town_
