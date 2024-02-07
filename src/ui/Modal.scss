@@ -1,0 +1,35 @@
+@use "../styles/colors.scss";
+@use "../styles/fonts.scss";
+
+.modal-save {
+  position: absolute;
+  padding: 1rem 2rem;
+  border-radius: 0 0 1rem 1rem;
+
+  animation-name: slide-down;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+
+  font-size: fonts.$size_result;
+  color: colors.$blue_light;
+}
+
+.success {
+  background-color: colors.$green_result;
+}
+
+.failure {
+  background-color: colors.$red_result;
+}
+
+@keyframes slide-down {
+  from {
+    position: absolute;
+    top: -4rem;
+  }
+  to {
+    position: absolute;
+    top: 0rem;
+  }
+}

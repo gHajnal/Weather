@@ -1,0 +1,38 @@
+@use "../styles/colors.scss";
+@use "../styles/fonts.scss";
+
+.chevronLeftIcon {
+  width: 20rem;
+  height: 3rem;
+  font-size: fonts.$size_giant;
+  padding: 0rem 0rem 6rem 0rem;
+  line-height: 55%;
+}
+
+.plusIcon {
+  font-size: fonts.$size_giant;
+
+  font-weight: bolder;
+  color: colors.$green_accent;
+  :visited {
+    color: colors.$green_accent;
+  }
+}
+
+.minusIcon {
+  font-size: fonts.$size_giant;
+  font-weight: bolder;
+  color: colors.$red_accent;
+}
+
+/* position is set for Capital component input */
+.chevronDownIcon {
+  font-size: fonts.$size_capital;
+  transform: rotate(0.75turn);
+  position: relative;
+  left: -1.5rem;
+}
+
+.colorize_icons {
+  color: colors.$blue_medium;
+}

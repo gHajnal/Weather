@@ -1,0 +1,37 @@
+@use "../fonts.scss";
+@use "../colors.scss";
+@use "../mixins.scss";
+
+.home__placeholder {
+  @include mixins.default-flex(flex-end);
+  height: 8.75rem;
+  font-size: fonts.$size_result;
+  color: colors.$blue_light;
+}
+
+.home__capitals-list {
+  font-size: fonts.$size_capital;
+  color: colors.$blue_light;
+}
+
+.home__add-capitals {
+  @include mixins.default-flex(flex-end);
+}
+
+.home__placeholder--backIcon {
+  height: 3rem;
+  width: 20rem;
+  padding: 0rem 0rem 6rem 0rem;
+}
+.home__capital-row {
+  @include mixins.default-flex(
+    $flex-direction: row,
+    $justify-content: space-between
+  );
+}
+.home__capital {
+  padding-right: 1rem;
+}
+.home__remove--cta {
+  @include mixins.custom-button();
+}

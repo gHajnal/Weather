@@ -1,0 +1,22 @@
+@use "../colors.scss";
+@use "../mixins.scss";
+@use "../fonts.scss";
+
+.message {
+  @include mixins.default-flex();
+
+  height: 20rem;
+
+  color: colors.$blue_light;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.navigation {
+  padding: 0;
+  padding: 2rem;
+
+  font-size: fonts.$size_result;
+
+  color: colors.$blue_light;
+}

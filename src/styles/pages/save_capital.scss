@@ -1,0 +1,52 @@
+@use "../fonts.scss";
+@use "../colors.scss";
+@use "../mixins.scss";
+
+.colorize {
+  color: colors.$blue_medium;
+  font-size: fonts.$size_result;
+}
+
+/* responsible for input and chevron together */
+.capital__input-area {
+  @include mixins.default_flex($flex-direction: row);
+  width: 20rem;
+  box-sizing: content-box;
+}
+
+/* responsible for all actually input field related rules */
+.capital__input-field {
+  padding: 0rem !important;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+
+  box-sizing: border-box;
+  border-width: 0 0 0.2rem 0 !important;
+  border-color: colors.$blue_medium;
+
+  font-size: fonts.$size_result;
+  color: colors.$blue_light;
+  background-color: colors.$background;
+}
+
+.capital__input-field:focus-visible {
+  outline: 0px solid;
+}
+
+::placeholder {
+  color: colors.$blue_light;
+}
+
+.capitals__filtered-list {
+  @include mixins.default-flex();
+  align-items: flex-start;
+  width: 20rem;
+  position: relative;
+
+  box-sizing: content-box;
+  margin: 0 !important;
+}
+
+.capitals__filtered-list--item {
+  padding: 0 !important;
+}

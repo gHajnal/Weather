@@ -1,0 +1,15 @@
+$hue: 205;
+$green_hue: 135;
+$red_hue: 0;
+$alpha: 0.8;
+
+$background: hsl($hue, 44%, 14%);
+$background-spinner: hsl($hue, 44%, 14%, 0.8);
+$blue_medium: hsl($hue, 66%, 45%);
+$blue_light: hsl($hue, 36%, 69%);
+
+$green_accent: hsl($green_hue, 100%, 50%);
+$green_result: hsl($green_hue, 45%, 22%, $alpha);
+
+$red_accent: hsl($red_hue, 100%, 50%);
+$red_result: hsl(0, 45%, 22%, $alpha);

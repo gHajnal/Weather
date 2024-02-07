@@ -1,0 +1,30 @@
+@use "./colors.scss";
+@use "./mixins.scss";
+
+.container {
+  @include mixins.default-flex();
+
+  min-width: 20rem;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  padding-bottom: 1rem;
+  list-style-type: none;
+}
+
+:link {
+  cursor: pointer;
+  text-decoration-line: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+:link,
+:visited {
+  text-decoration-line: none;
+  color: colors.$blue_light;
+}

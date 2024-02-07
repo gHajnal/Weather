@@ -1,0 +1,75 @@
+@use "../colors.scss";
+@use "../mixins.scss";
+@use "../fonts.scss";
+
+/* For CurrentTime */
+.time__container {
+  @include mixins.default-flex();
+  margin-bottom: 1rem;
+}
+
+/* For CurrentTime */
+.time__time-data {
+  padding: 1rem;
+
+  line-height: 55%;
+  color: colors.$blue_medium;
+  font-size: fonts.$size_giant;
+}
+
+.weather__main-info {
+  margin: 2rem;
+  @include mixins.default-flex();
+
+  .weather__capital {
+    font-size: fonts.$size_capital;
+    color: colors.$blue_light;
+  }
+
+  .weather__description {
+    font-size: fonts.$size_small;
+    color: colors.$blue_light;
+  }
+
+  .weather__weather-icon {
+    font-size: fonts.$size_g_plus;
+    color: colors.$blue_light;
+  }
+}
+
+.weather__details {
+  margin: 2rem;
+}
+.weather__detail {
+  @include mixins.default-flex(
+    $flex-direction: row,
+    $justify-content: space-between
+  );
+}
+
+.weather__detail-icon {
+  padding: 0.5rem;
+  font-size: fonts.$size_result;
+}
+
+.weather__detail-data {
+  padding: 0.5rem;
+
+  font-size: fonts.$size_result;
+  color: colors.$blue_light;
+}
+
+.unitHandler {
+  @include mixins.custom-button();
+}
+
+img {
+  mix-blend-mode: lighten;
+
+  filter: invert(38%) sepia(48%) saturate(1870%) hue-rotate(181deg)
+    brightness(89%) contrast(75%);
+  /* Edits alt' text if icon is not available */
+  font-size: 2rem;
+  min-height: 60px;
+  position: relative;
+}

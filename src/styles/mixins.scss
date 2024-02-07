@@ -1,0 +1,19 @@
+@mixin default-flex($justify-content: center, $flex-direction: column) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @if $flex-direction != column {
+    flex-direction: $flex-direction;
+  }
+  @if $justify-content != center {
+    justify-content: $justify-content;
+  }
+}
+
+@mixin custom-button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
